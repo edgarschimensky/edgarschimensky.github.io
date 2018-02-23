@@ -1,0 +1,61 @@
+*{
+	box-sizing:border-box;
+	padding:0;
+}
+.capaprin{
+	width: 500px;
+	height: 500px;
+}
+
+#capa1{
+	position: absolute;
+    left: 1000px;
+    top: 500px;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+	background-color:#0044cc;
+	width: 800px;
+	height: 500px;
+}
+
+#capa2{
+	
+	margin: 100px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+	background-color:#0044cc;
+	width: 800px;
+	height: 500px;
+}
+
+
+#capa3{
+	
+	margin: 100px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+	background-color:#0044cc;
+	width: 800px;
+	height: 500px;
+}
+
+#capa4{	
+
+	position: absolute;
+    left: 1000px;
+    top: 1100px;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+	background-color:#0044cc;
+	width: 800px;
+	height: 500px;
+}
+
+
+

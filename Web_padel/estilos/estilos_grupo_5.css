@@ -1,0 +1,58 @@
+*{
+	box-sizing:border-box;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+}
+
+
+#menu li{
+	background-color: greenyellow;
+	width: 7%;
+	font-size: 180%;
+	border-style: outset;
+}
+
+
+#menu li:hover{
+	background-color: limegreen;
+	border-style:inset ;
+}
+
+#menu{
+	display: flex;
+	justify-content: space-around;
+	list-style:none;
+    
+}
+
+#SeccionFoto{
+	text-align: left;
+	display:flex;
+	justify-content: space-around;
+	height: 50%;
+	
+
+
+}
+
+header{
+	text-align:center;
+}
+
+#Texto{
+	margin:0;
+	width:20%;
+	display: flex;
+	align-content: center;
+	font-size: 140%;
+}
+
+#foto1{
+	height:100%;
+}
+
+	

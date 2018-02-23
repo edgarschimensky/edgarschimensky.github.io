@@ -1,0 +1,86 @@
+*{
+	box-sizing: border-box;
+}
+
+.fila{
+	width:50%;
+	height: 50%;
+	border: solid white 2px;
+	display:flex;
+	justify-content: center;
+
+	
+	
+}
+
+
+
+
+
+#capa3{
+	background-color:white;
+	justify-content:center;
+	display:flex;
+	
+	
+}
+
+#capa4{
+	background-color:#ccff33;
+	display:flex;
+	width: 800px;
+	height: 800px;
+	border: solid blue 20px;
+	flex-wrap:wrap;
+	align-content:center;
+	align-items:center;
+	font-size: 300%;
+	
+}
+
+#capa7{
+	
+	margin: 100px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+	background-color:#0044cc;
+	width: 800px;
+	height: 500px;
+}
+
+.Texto{
+
+	width:80%;
+	display: flex;
+	align-content: center;
+	font-size: 140%;
+ 
+	height: 50%;
+}
+
+.SeccionFoto{
+	text-align: left;
+	display:flex;
+	justify-content: space-around;
+	height: 40%;
+	
+	}
+	
+
+	
+	
+	
+#Instalaciones{
+	align-content: left;
+	
+	
+}
+
+
+
+	
+	
+
+
+ 
