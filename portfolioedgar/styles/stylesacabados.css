@@ -1,0 +1,41 @@
+*{
+	box-sizing:border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#cuadro5{
+	height:75%;
+	display:flex;
+	justify-content:center;
+	align-items:center;	
+}
+
+
+#cuadroacabados{
+	width: 70%;
+	height:70%;
+	display:flex;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.6);
+}
+#titulocuadro5{
+	height: 7%;
+	width: 75%;
+	position:relative;
+	right: -20%;
+	top:2%;
+	font-size: 180%;
+	color:white;
+	text-align:center;
+	background-color:firebrick;
+}
+#textocuadro5{
+	height:70%;
+	width: 95%;
+	color:white;
+	position:relative;
+	top:20%;
+	right:23%;
+}
+	

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edgar Schimensky</title>
+<link rel="stylesheet" type="text/css"
+	href="styles/stylesini.css"/>
+<link rel="stylesheet" type="text/css"
+	href="styles/stylesportfolio.css"/>
+	<meta charset="utf-8"/>
+</head>
+
+<body >
+	
+	<header>
+        
+        <nav>
+            <ul id="menu">
+                <li class="logo"><a href= "inicio.html">
+					<img alt src="images/logoedgar.png" width="300" height="265"> </a></li>
+				<li class="enlacenormal"><a href="portfolio.html">Portfolio</a>
+					<ul>
+						<li ><a href="animacion.html">Animación</a></li>
+						<li ><a href="unity.html">Unity</a></li>
+						<li ><a href="rigging.html">Rigging</a></li>
+						<li ><a href="modelado.html">Modelado</a></li>
+						<li ><a href="acabados.html">Acabados</a></li>
+						<li ><a href="diseño.html">Diseño</a></li>
+					</ul>
+				</li>
+                <li class="enlacenormal"><a href="sobremi.html">Sobre mi</a></li>
+				<li class="enlacenormal"><a href="cv.html">Cv y Contacto</a></li>
+            </ul>
+	   </nav>
+        
+		
+	</header>
+	
+
+		<div class="container">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 6</div>
+					<a href="animacion.html"><img alt src="images/foto_animacion.jpg" style="width:100%"></a>
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 6</div>
+					<a href="unity.html"><img alt src="images/foto_unity.jpg" style="width:100%"></a>
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 6</div>
+					<a href="rigging.html"><img alt src="images/foto_rigging.jpg" style="width:100%"></a>
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">4 / 6</div>
+					<a href="modelado.html"><img alt src="images/foto_modelado.jpg" style="width:100%"></a>
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">5 / 6</div>
+					<a href="acabados.html"><img alt src="images/foto_acabados.jpg" style="width:100%"></a>
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">6 / 6</div>
+					<a href="diseño.html"><img alt src="images/foto_diseño.jpg" style="width:100%"></a>
+			</div>
+
+		
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<div class="caption-container">
+			<p id="caption"></p>
+			</div>
+
+			<div class="row">
+				<div class="column">
+				<img class="demo cursor" src="images/foto_animacion.jpg" style="width:100%" onclick="currentSlide(1)" alt="Animación">
+				</div>
+				<div class="column"> 
+				<img class="demo cursor" src="images/foto_unity.jpg" style="width:100%" onclick="currentSlide(2)" alt="Unity">
+				</div>
+				<div class="column">
+				<img class="demo cursor" src="images/foto_rigging.jpg" style="width:100%" onclick="currentSlide(3)" alt="Rigging">
+				</div>
+				<div class="column">
+				<img class="demo cursor" src="images/foto_modelado.jpg" style="width:100%" onclick="currentSlide(4)" alt="Modelado">
+				</div>
+				<div class="column">
+				<img class="demo cursor" src="images/foto_acabados.jpg" style="width:100%" onclick="currentSlide(5)" alt="Acabados">
+				</div>
+				<div class="column">
+				<img class="demo cursor" src="images/foto_diseño.jpg" style="width:100%" onclick="currentSlide(6)" alt="Diseño">
+				</div> 
+			</div>
+		</div>
+		
+	<script>
+		var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+	</script>
+
+</body>
+
+</html>
